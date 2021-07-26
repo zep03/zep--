@@ -1,0 +1,179 @@
+{{extend '../_layouts/home.html'}}
+
+{{block 'title'}}{{'多人博客 - 首页'}}{{/block}}
+
+{{block 'head'}}
+<link rel="stylesheet" href="/public/css/m_login.css">
+<style>
+	#review_title {
+		height: 40px;
+		line-height: 40px;
+		background-color: #F7F7F7;
+	}
+
+	.avater img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.one_title {
+		width: 80%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+</style>
+{{/block}}
+
+{{block 'body'}}
+<section class="container">
+	<div class="row mt-4">
+		<div class="col-lg-8 bg-white p-3">
+			<div class="topic_head border-bottom text-center">
+				<div class="h3">{{ topic.title }}</div>
+				<p class="text-muted">
+					发布时间：2021-04-03 20：00：00
+					<span>作者:zep</span>
+					<span>202015次浏览</span>
+					<!-- {{ if !topic }} -->
+					<span><a href="/topics/edit?id={{ topic._id }}">编辑</a></span>
+
+					<!-- {{ /if }} -->
+				</p>
+			</div>
+			<div class="topicid" style="visibility: hidden;">{{ topic._id }}</div>
+			<div class="topic_body p-3">
+				<div class="topic_content">{{ topic.content }}</div>
+			</div>
+		</div>
+		<div class="col-lg-4 d-none d-lg-block">
+			<div class="card text-center">
+				<div class="card-header">
+					作者
+				</div>
+				<div class="card-body">
+					<img src="../../public/img/me.jpg" class="img-fluid img-thumbnail w-50 h-50" alt="">
+					<p class="card-text">作者很懒，没有写下些什么</p>
+				</div>
+				<div class="card-footer text-muted">
+					积分：2566分
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mt-4">
+		<div class="col-lg-8  p-0 review bg-white">
+			<div class="w-100 h5 border-bottom pl-3 mb-0" id="review_title">评论(20)</div>
+			<div class="review_body">
+				<!-- 发布评论 -->
+				<div>
+					<form class="form-group p-3" id="commentform">
+						<label for="exampleFormControlTextarea1">发表评论</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+						<div class="text-right mt-2"><span id="commentBtn" class="btn btn-primary">发表</span></div>
+					</form>
+				</div>
+				{{each comment}}
+				<div class="row p-2 border-bottom mt-2" style="height: 100px;">
+					<div class="avater col-lg-1 col-md-1 col-sm-2 col-2 pl-4">
+						<img src="../../public/img/me.jpg" class="img-fluid d-inline" style="border-radius: 50%;"
+							alt="">
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-8 col-8 pl-0">
+						<span class="text-muted">用户zep</span> <span>1楼 4个月前</span>
+						<div>{{$value.commentContent}}</div>
+
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 d-flex align-items-center">
+						<img class="" src="../../public/img/zan_active.png" class="img-fluid"
+							style="width: 25px;height: 20px;" alt="">
+					</div>
+				</div>
+				{{/each}}
+		
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div id="review_title" class="pl-3 border-bottom h5 mb-0">热门文章<span
+					class="badge badge-danger ml-2">Hot</span></div>
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1 one_title">29个CSS面试题总结（知识点解析）</h5>
+						<small>1天前</small>
+					</div>
+					<p class="mb-1 text_mul">CSS是层叠样式表（ Cascading Style Sheets ）的缩写，是一种样式表语言，用于描述以 HTML 之类的标记语言编写的文档的布局。
+						它是用于设计Web页面的三剑客之一，另外两位浩客是HTML和Javascript。</p>
+					<div class="text-right text-primary" style="font-size: 12px;">阅读预计需要10分钟</div>
+				</a>
+				<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1 one_title">css中设置段落缩进的属性是什么</h5>
+						<small>2天前</small>
+					</div>
+					<p class="mb-1 text_mul">
+						css中设置段落缩进的属性是“text-indent”，语法格式“text-indent:length|%;”；当值为“length”时可定义固定的缩进，当值为“%”类型时可定义基于父元素宽度的百分比的缩进。
+					</p>
+					<div class="text-right text-primary" style="font-size: 12px;">阅读预计需要10分钟</div>
+				</a>
+				<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1 one_title">Spring boot的简单用法</h5>
+						<small>5天前</small>
+					</div>
+					<p class="mb-1 text_mul">
+						打算通过写一系列的文章，让大家能够认识SpringBoot，通过对SpringBoot的入门学习后，在通过一个示例Demo来让大家能够真正上手SpringBoot。</p>
+					<div class="text-right text-primary" style="font-size: 12px;">阅读预计需要10分钟</div>
+				</a>
+				<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1 one_title">29个CSS面试题总结（知识点解析）</h5>
+						<small>25天前</small>
+					</div>
+					<p class="mb-1 text_mul">CSS是层叠样式表（ Cascading Style Sheets ）的缩写，是一种样式表语言，用于描述以 HTML 之类的标记语言编写的文档的布局。
+						它是用于设计Web页面的三剑客之一，另外两位浩客是HTML和Javascript。</p>
+					<div class="text-right text-primary" style="font-size: 12px;">阅读预计需要10分钟</div>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$(function() {
+		$('#commentBtn').click(function() {
+			var commentContent = $('#exampleFormControlTextarea1').val()
+			var topic_id = $('.topicid').text().replace(/"/g, '')
+			console.log(topic_id)
+			var comment = {
+				'commentContent': commentContent,
+				'topic_id': topic_id
+			}
+			$.ajax({
+				url: '/comments',
+				type: 'post',
+				data: comment,
+				dataType: 'json',
+				success: function(data) {
+					var err_code = data.err_code
+					if (err_code === 0) {
+						window.alert('发表成功！')
+
+						// 服务端重定向针对异步请求无效
+						location.reload()
+					} else if (err_code === 1) {
+						window.alert('发表失败')
+					} else if (err_code === 500) {
+						window.alert('服务器忙，请稍后重试！')
+					}
+				}
+			})
+		})
+
+
+	})
+</script>
+
+{{/block}}

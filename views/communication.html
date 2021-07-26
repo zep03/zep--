@@ -1,0 +1,352 @@
+{{extend './_layouts/home.html'}}
+
+{{block 'title'}}{{'多人博客 - 首页'}}{{/block}}
+{{block 'head'}}
+<style type="text/css">
+	#list_active span:hover {
+		color: red !important;
+	}
+
+	.c_title {
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.avatar_radius {
+		width: 10%;
+		height: 10%;
+		border-radius: 100%;
+	}
+
+	.alink:link {
+	
+	color:#000000;
+	
+	text-decoration:none;
+	
+	}
+	
+	.alink:visited {
+	
+	color:#000000;
+	
+	text-decoration:none;
+	
+	}
+	
+	.alink:hover {
+	color:#000000;
+	text-decoration:none;
+	
+	}
+	
+	.alink:active {
+	
+	color:#000000;
+	
+	text-decoration:none;
+	
+	}
+</style>
+
+{{/block}}
+{{block 'body'}}
+
+<section class="container">
+	<div class="row mt-3">
+		<div class="col-lg-3 mb-3">
+			<div class="list-group" id="list_active">
+				<div type="button" class="list-group-item list-group-item-action d-flex justify-content-between">
+					<span class="iconfont icon-quanbu-copy">&nbsp;全部文章</span>
+					<span class="text-muted align-self-end" style="font-size: 13px;">2.7万篇</span>
+				</div>
+				<button type="button" class="list-group-item list-group-item-action d-flex justify-content-between">
+					<span class="iconfont icon-qianduankaifa">&nbsp;前端开发</span>
+					<span class="text-muted align-self-end" style="font-size: 13px;">1.7万篇</span>
+				</button>
+				<button type="button" class="list-group-item list-group-item-action d-flex justify-content-between">
+					<span class="iconfont icon-java">&nbsp;Java</span>
+					<span class="text-muted align-self-end" style="font-size: 13px;">3.4万篇</span>
+				</button>
+				<button type="button" class="list-group-item list-group-item-action d-flex justify-content-between">
+					<span class="iconfont icon-php">&nbsp;PHP</span>
+					<span class="text-muted align-self-end" style="font-size: 13px;">0.4万篇</span>
+				</button>
+				<button type="button" class="list-group-item list-group-item-action d-flex justify-content-between">
+					<span class="iconfont icon-java-script">&nbsp;javascript</span>
+					<span class="text-muted align-self-end" style="font-size: 13px;">2.0万篇</span>
+				</button>
+				<button type="button" class="list-group-item list-group-item-action d-flex justify-content-between">
+					<span class="iconfont icon-python">&nbsp;Python</span>
+					<span class="text-muted align-self-end" style="font-size: 13px;">2.7万篇</span>
+				</button>
+				<button type="button" class="list-group-item list-group-item-action d-flex justify-content-between">
+					<span class="iconfont icon-wulianwang-">&nbsp;大数据</span>
+					<span class="text-muted align-self-end" style="font-size: 13px;">0.7万篇</span>
+				</button>
+			</div>
+		</div>
+		<div class="col-lg-6 px-0">
+			<div class="card card-header bg-white border-0">
+				<h5 class="mb-0">帖子</h5>
+			</div>
+			<div class="card  p-3">
+				<div class="row no-gutters">
+					<div class="col-lg-8">
+						<div class="d-flex align-items-center">
+							<img src="/public/img/me.jpg" class="img-fluid avatar_radius">
+							<div class="ml-2">
+								<div>HE</div>
+								<div>03月17日</div>
+							</div>
+						</div>
+						<div class="" style="margin-left: 11%;">
+							<h5 class="font-weight-bold c_title">常用的java代码段有哪些</h5>
+							<div class="mb-2 text-muted">
+								<span class="iconfont icon-biaoqian mr-2"> Java</span>
+								<span class="iconfont icon-biaoqian mr-2"> 后端</span>
+							</div>
+							<div>
+								<span class="iconfont icon-xihuan mr-5"> 317次 喜欢</span>
+								<span class="iconfont icon-pinglun"> 200条 评论</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex">
+						<div class="align-self-end">2589人阅读&nbsp;&nbsp; <span class="iconfont icon-shoucang1"> 收藏</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card p-3">
+				<div class="row no-gutters">
+					<div class="col-lg-8">
+						<div class="d-flex align-items-center">
+							<img src="/public/img/avatar4.jpg" class="img-fluid avatar_radius">
+							<div class="ml-2">
+								<div>HE</div>
+								<div>03月17日</div>
+							</div>
+						</div>
+						<div class="" style="margin-left: 11%;">
+							<h5 class="font-weight-bold c_title">Java开发工程师需要学什么？Java开发工程师需要学什么？</h5>
+							<div class="mb-2 text-muted">
+								<span class="iconfont icon-biaoqian mr-2"> Java</span>
+								<span class="iconfont icon-biaoqian mr-2"> 后端</span>
+							</div>
+							<div>
+								<span class="iconfont icon-xihuan mr-5"> 317次 喜欢</span>
+								<span class="iconfont icon-pinglun"> 200条 评论</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex">
+						<div class="align-self-end">2589人阅读&nbsp;&nbsp; <span class="iconfont icon-shoucang1"> 收藏</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card p-3">
+				<div class="row no-gutters">
+					<div class="col-lg-8">
+						<div class="d-flex align-items-center">
+							<img src="/public/img/avatar3.jpg" class="img-fluid avatar_radius">
+							<div class="ml-2">
+								<div>HE</div>
+								<div>03月17日</div>
+							</div>
+						</div>
+						<div class="" style="margin-left: 11%;">
+							<h5 class="font-weight-bold c_title">一篇文章带你快速入门JavaScript（实操代码）</h5>
+							<div class="mb-2 text-muted">
+								<span class="iconfont icon-biaoqian mr-2"> Java</span>
+								<span class="iconfont icon-biaoqian mr-2"> 后端</span>
+							</div>
+							<div>
+								<span class="iconfont icon-xihuan mr-5"> 317次 喜欢</span>
+								<span class="iconfont icon-pinglun"> 200条 评论</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex">
+						<div class="align-self-end">2589人阅读&nbsp;&nbsp; <span class="iconfont icon-shoucang1"> 收藏</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card p-3">
+				<div class="row no-gutters">
+					<div class="col-lg-8">
+						<div class="d-flex align-items-center">
+							<img src="/public/img/avatar2.jpg" class="img-fluid avatar_radius">
+							<div class="ml-2">
+								<div>HE</div>
+								<div>03月17日</div>
+							</div>
+						</div>
+						<div class="" style="margin-left: 11%;">
+							<h5 class="font-weight-bold c_title">常用的java代码段有哪些</h5>
+							<div class="mb-2 text-muted">
+								<span class="iconfont icon-biaoqian mr-2"> Java</span>
+								<span class="iconfont icon-biaoqian mr-2"> 后端</span>
+							</div>
+							<div>
+								<span class="iconfont icon-xihuan mr-5"> 317次 喜欢</span>
+								<span class="iconfont icon-pinglun"> 200条 评论</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex">
+						<div class="align-self-end">2589人阅读&nbsp;&nbsp; <span class="iconfont icon-shoucang1"> 收藏</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{ each topicList }}
+			<div class="card p-3">
+				<div class="row no-gutters">
+					<div class="col-lg-8">
+						<div class="d-flex align-items-center">
+							<img src="/public/img/avatar3.jpg" class="img-fluid avatar_radius">
+							<div class="ml-2">
+								<div>HE</div>
+								<div>03月17日</div>
+							</div>
+						</div>
+						<div class="" style="margin-left: 11%;">
+							<h5
+								class="font-weight-bold align-items-center align-items-center align-items-center c_title">
+								<a class="alink" href="/topics?topic_id={{ $value._id}}">{{ $value.title }}</a>
+							</h5>
+							<div class="mb-2 text-muted">
+								<span class="iconfont icon-biaoqian mr-2"> Java</span>
+								<span class="iconfont icon-biaoqian mr-2"> 后端</span>
+							</div>
+							<div>
+								<span class="iconfont icon-xihuan mr-5"> 317次 喜欢</span>
+								<span class="iconfont icon-pinglun"> 200条 评论</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex">
+						<div class="align-self-end">2589人阅读&nbsp;&nbsp; <span class="iconfont icon-shoucang1"> 收藏</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{ /each }}
+			
+			<!-- 分页 -->
+			<div class="d-flex justify-content-center mt-3">
+				<nav>
+				  <ul class="pagination">
+				    <li class="page-item disabled">
+				      <span class="page-link">上一页</span>
+				    </li>
+				    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+				    <li class="page-item ">
+				      <span class="page-link">
+				        2
+				        <span class="sr-only">(current)</span>
+				      </span>
+				    </li>
+				    <li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">4</a></li>
+					<li class="page-item"><a class="page-link" href="#">5</a></li>
+					<li class="page-item"><a class="page-link" href="#">6</a></li>
+				    <li class="page-item">
+				      <a class="page-link" href="#">下一页</a>
+				    </li>
+				  </ul>
+				</nav>
+			</div>
+			
+		</div>
+		<div class="col-lg-3">
+			<div class="card-header bg-white mb-3 text-center">
+				<div class="btn-group  btn-group-lg" role="group">
+					<a type="button" class="btn btn-success" style="width: 110%; height: 50%;" href="/topics/new">发帖</a>
+					<button type="button" class="btn btn-primary" style="width: 110%; height: 50%;" data-toggle="modal" data-target="#exampleModalCenter">签到</button>
+				</div>
+			</div>
+			<div class="card" style="width: 100%;">
+				<img class="card-img-top p-1" src="/public/img/classes/node.png" style="height: 180px;">
+
+				<div class="card-body pt-0">
+					<h5 class="card-title">Zep教育，成就你的梦想！</h5>
+					<p class="card-text text-muted">十大核心优势， 只要你想参加培训做程序员，就没有不选择【Zep教育】的理由。</p>
+					<div class="text-center">
+						<a href="#" class="btn btn-primary text-white">→加入我们</a>
+					</div>
+				</div>
+			</div>
+			<div class="card px-0 mt-3" style="width: 100%;">
+				<div class="card-header d-flex justify-content-between">
+					<h5 class="mb-0">为你推荐</h5>
+					<a href="#" class="text-decoration-none">查看全部</a>
+				</div>
+				<ul class="list-group list-group-flush active_color">
+					<li class="list-group-item">
+						<a href="#" class="text-decoration-none">
+							<div style="color: black;">新版vue3.x 全家桶</div>
+							<div class="text-muted">vue3.x 全家桶</div>
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="#" class="text-decoration-none">
+							<div style="color: black;">AJAX 核心编程</div>
+							<div class="text-muted">AJAX</div>
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="#" class="text-decoration-none">
+							<div style="color: black;">实时数据采集系统【大数据】</div>
+							<div class="text-muted">Java大数据</div>
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="#" class="text-decoration-none">
+							<div style="color: black;">新版vue3.x 全家桶</div>
+							<div class="text-muted">vue3.x 全家桶</div>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 点击签到，出现模态框 -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">签到</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        是否确认签到？
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">确认</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{/block}}
+
+
+{{block 'script'}}
+
+<script type="text/javascript">
+
+</script>
+{{/block}}

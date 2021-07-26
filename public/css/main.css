@@ -1,0 +1,71 @@
+.dropdown-current-user {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 5px;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+	background: none;
+}
+
+
+
+body a:link {
+	color: #fff;
+}
+
+#c_player img {
+	height: 329px;
+}
+
+.recommend img {
+	width: 100%;
+}
+
+.recommend_text {
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.hot_label {
+	display: inline-block;
+	width: 28%;
+	color: #999;
+	background-color: #f6f6f6;
+	font-size: 14px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	/* padding-right: 15px; */
+	padding: 5px;
+	text-align: center;
+
+}
+
+.hot_label:hover {
+	background-color: #45B6F7;
+	color: #fff;
+}
+
+.hot_label a:hover {
+	color: #fff
+}
+
+/* 多行文本溢出显示... */
+.text_mul {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.active_color li:hover {
+	background-color: #F8F9FA;
+}
+
+

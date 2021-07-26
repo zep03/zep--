@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet">
+		<!-- 移动设备优先  设置宽度为设备屏幕的宽度，初始化缩放的比例，自动适应手机屏幕的宽度-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	</head>
+	<body>
+		<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Zep教育</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse row" id="navbarSupportedContent">
+				<div class="mr-auto d-flex justify-content-between">
+					<ul class="navbar-nav justify-content-end">
+						<li class="nav-item active">
+							<a class="nav-link" href="/">首页 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">免费资源</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">学习路线图</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">技术交流</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">最新活动</a>
+						</li>
+						<li class="nav-item" style="margin-right: 100px;">
+							<a class="nav-link" href="#">免费资源</a>
+						</li>
+
+
+						<div class="d-flex justify-content-end">
+							<div class="form-inline my-2 my-lg-0 nav-item dropdown d-flex align-items-center "
+								style="width: 300px;">
+								<input id="searchInp" class="form-control mr-sm-2" type="search" placeholder="请输入搜索内容"
+									aria-label="Search">
+								<button class="btn btn-outline-success my-2 my-sm-0" id="searchBtn">搜索</button>
+							</div>
+
+							{{ if user }}
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									个人中心
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="/settings/admin">当前登录用户: {{ user.nickname }}</a>
+									<a class="dropdown-item" href="/settings/admin">个人主页</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="/settings/profile">设置</a>
+									<a class="dropdown-item" href="/logout">退出</a>
+								</div>
+							</li>
+							<a class="btn btn-default navbar-btn" href="/topics/new">发起</a>
+							{{ else }}
+							<div class="">
+								<a class="btn btn-primary navbar-btn " style="20%" href="/login">登录</a>
+								<a class="btn btn-success navbar-btn" href="/register">注册</a>
+							</div>
+
+							{{ /if }}
+						</div>
+
+
+					</ul>
+				</div>
+		</nav> -->
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="/">Zep教育</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+		
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="/community">首页 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">免费资源</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#">学习路线图</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/communication">技术交流</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">最新活动</a>
+						</li>
+						
+						{{ if user }}
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								个人中心
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="/settings/admin">当前登录用户: {{ user.nickname }}</a>
+								<a class="dropdown-item" href="/settings/admin">个人主页</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="/settings/profile">设置</a>
+								<a class="dropdown-item" href="/logout">退出</a>
+							</div>
+						</li>
+						<!-- <a class="btn btn-default navbar-btn" href="/topics/new">发起</a> -->
+						{{ else }}
+						<div class="">
+							<a class="btn btn-primary navbar-btn " style="20%" href="/login">登录</a>
+							<a class="btn btn-success navbar-btn" href="/register">注册</a>
+						</div>
+						
+						{{ /if }}
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="搜索" id="searchInp" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" id="searchBtn" type="submit">搜索</button>
+						
+					</form>
+				</div>
+			</nav>
+		</div>
+
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+		<!-- 
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script> -->
+		<script>
+			$(function() {
+				$("[data-toggle='popover']").popover({
+					animation: true, //淡入淡出
+					html: true, //content中插入html代码
+					container: "body",
+					content: "<div style='width: 20px; height: 20px;'><img src='/public/img/erweima.jpg' style='width:30px; height: 50px'></div>", //插入图片的路径 及 样式
+				});
+			});
+			$('#searchBtn').on('click', function(e) {
+				var searchValue = $('#searchInp').val()
+				alert(searchValue)
+				var formData = {}
+				formData.searchValue = searchValue
+				/* $.ajax({
+				  url: '/searchTopicList?searchValue=' + searchValue,
+				  type: 'get',			
+				  success: function (data) {
+				    var err_code = data.err_code
+				    if (err_code === 0) {
+				      // window.alert('注册成功！')
+				      // 服务端重定向针对异步请求无效
+				      // window.location.href = '/search'
+					  alert('搜索成功！')
+				    } else if (err_code === 500) {
+				      window.alert('服务器忙，请稍后重试！')
+				    }
+				  }
+				}) */
+				$.ajax({
+					url: '/searchTopicList',
+					type: 'post',
+					data: formData,
+					dataType: 'json',
+					success: function(data) {
+						var err_code = data.err_code
+						
+						if (err_code === 200) {
+							// window.alert('注册成功！')
+							// 服务端重定向针对异步请求无效
+							// window.location.href = '/search'
+							alert('搜索成功！')
+							// alert(data.message)
+							console.log(data.message)
+						} else if (err_code === 500) {
+							window.alert('服务器忙，请稍后重试！')
+						}
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

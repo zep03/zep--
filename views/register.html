@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="/public/css/login.css">
+	</head>
+
+	<body>
+		<!-- 顶部导航开始 -->
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="col shadow-sm">
+						<nav class="navbar p-1 navbar-expand-lg navbar-light bg-white">
+							<a class="navbar-brand navbar-toggler border-0" href="#">
+								<img src="/public/img/logo.png" class="img-fluid" style="max-width: 90px;" alt="">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item active d-flex align-items-center">
+										<img src="/public/img/logo.png" style="max-width: 25px;max-height: 20px;"
+											alt="">
+										<a class="nav-link  text-muted mr-3" href="/">首页</a>
+									</li>
+									<li class="nav-item d-flex align-items-center">
+										<img src="/public/img/jiaoyu.png"
+											style="max-width: 15px;max-height: 15px; display: inline-block;" alt="">
+										<a class="nav-link" href="#">学习天地</a>
+									</li>
+									<li class="nav-item d-flex align-items-center">
+										<img src="/public/img/shequ.png"
+											style="max-width: 20px;max-height: 20px; display: inline-block;" alt="">
+										<a class="nav-link" href="/community">技术社区</a>
+									</li>
+									<li class="nav-item d-flex align-items-center">
+										<img src="/public/img/zhixiaoyun.png"
+											style="max-width: 20px;max-height: 20px; display: inline-block;" alt="">
+										<a class="nav-link" href="#">智校云</a>
+									</li>
+									<li class="nav-item dropdown d-flex align-items-center">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											培训模式
+										</a>
+										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="#">面授模式</a>
+											<a class="dropdown-item" href="#">坐班模式</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">实习模式</a>
+										</div>
+									</li>
+									<li class="nav-item dropdown d-flex align-items-center">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											培训方向
+										</a>
+										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="#">Java高级工程师</a>
+											<a class="dropdown-item" href="#">HTML5前端+全栈</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">大数据大神班</a>
+										</div>
+									</li>
+									<li class="nav-item d-flex align-items-center">
+										<a class="nav-link disabled" href="#">Web全栈就业班<i
+												class="mark text-danger">￥18800</i> <s>￥19990</s></a>
+									</li>
+								</ul>
+								<div class="form-inline my-2 my-lg-0 nav-item dropdown d-flex align-items-center">
+									<img src="/public/img/wx.png" style="max-width: 25px;max-height: 30px;" alt="">
+									<a class="nav-link pl-1" href="#" data-trigger="hover" data-toggle="popover"
+										data-placement="bottom">
+										微信咨询
+									</a>
+
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- 顶部导航结束 -->
+		<div class="main">
+			<!-- <div class="header">
+
+				<p>{{ err_message }}</p>
+
+				<a href="/">
+					<img src="/public/img/logo.png" alt="">
+				</a>
+				<h1>用户注册</h1>
+			</div>
+			
+			<form id="register_form" method="post" action="/register">
+				<div class="form-group">
+					<label for="email">邮箱</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Email" autofocus>
+				</div>
+				<div class="form-group">
+					<label for="nickname">昵称</label>
+					<input type="text" class="form-control" id="nickname" name="nickname" placeholder="Nickname">
+				</div>
+				<div class="form-group">
+					<label for="password">密码</label>
+					<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+				</div>
+				<button type="submit" class="btn btn-success btn-block">注册</button>
+			</form>
+			<div class="message">
+				<p>已有账号? <a href="/login">点击登录</a>.</p>
+			</div> -->
+			<div class="header">
+				<a href="/">
+					<img src="/public/img/logo.png" alt="">
+				</a>
+				<h1>用户注册</h1>
+			</div>
+			<form class="needs-validation" novalidate id="register_form">
+				<div class="form-row">
+					<div class="col-12 mb-3">
+						<label for="validationCustomUsername">邮箱</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="inputGroupPrepend">@</span>
+							</div>
+							<input type="text" class="form-control" name="email" id="validationCustomUsername"
+								placeholder="请输入邮箱" value="admin@qq.com" aria-describedby="inputGroupPrepend" required>
+							<div class="invalid-feedback">
+								请输入邮箱
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-12 mb-3">
+						<label for="validationCustom02">昵称</label>
+
+						<input type="text" class="form-control" name="nickname" id="validationCustom02"
+							placeholder="请输入昵称" value="Otto" required>
+						<div class="invalid-feedback">
+							请输入昵称
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-12 mb-3">
+						<label for="validationCustom02">密码</label>
+
+						<input type="password" class="form-control" name="password" id="validationCustom02"
+							placeholder="请输入密码" value="Otto" required>
+						<div class="invalid-feedback">
+							请输入密码
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+						<label class="form-check-label" for="invalidCheck">
+							点击同意用户协议
+						</label>
+						<div class="invalid-feedback">
+							请勾选同意用户协议
+						</div>
+					</div>
+				</div>
+				<div class="form-row mb-3"><button class="btn btn-primary col-12" type="submit">注册</button></div>
+				<div class="message">
+					<p>已有账号? <a href="/login">点击登录</a>.</p>
+				</div>
+			</form>
+		</div>
+		<!-- 页脚开始 -->
+		<footer class="mt-4 bg-dark text-light small">
+			<div class="container">
+				<div class="row pt-3 pb-5">
+					<div class="col-sm-12 col-md-10 ">
+						<div class="pt-4">
+							<p>Zep教育，成就你的梦想！</p>
+							<ul class="nav">
+								<li class="nav-item"><a href="#" class="nav-link text-white pl-0">关于我们</a></li>
+								<li class="nav-item"><a href="#" class="nav-link text-white">联系我们</a></li>
+								<li class="nav-item"><a href="#" class="nav-link text-white">加入我们</a></li>
+								<li class="nav-item"><a href="#" class="nav-link text-white">帮助中心</a></li>
+							</ul>
+							<div class="text-muted">
+								<i>©2019-2021</i> 深圳网络科技有限公司 <span class="mx-3">版权所有</span> <a href="#"
+									class="text-muted">京ICP备200000号</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-2 text-md-right text-center p-0">
+						<figure class="figure mt-3">
+							<img src="../public/img/erweima.jpg" class="figure-img img-thumbnail"
+								style="max-width: 100px;" alt="">
+							<figcaption class="figure-caption text-center text-light">关注我们</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="/node_modules/jquery/dist/jquery.js"></script>
+		<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+		<!-- 表单验证 -->
+		<script>
+			(function() {
+				'use strict';
+				window.addEventListener('load', function() {
+
+					var forms = document.getElementsByClassName('needs-validation');
+					var form_1 = null
+					var validation = Array.prototype.filter.call(forms, function(form) {
+						form_1 = form
+						form.addEventListener('submit', function(event) {
+							if (form.checkValidity() === false) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+							form.classList.add('was-validated');
+
+						}, false);
+					});
+
+					$('#register_form').on('submit', function(e) {
+
+						e.preventDefault()
+						var formData = $(this).serialize()
+						if (form_1.checkValidity() === true) {
+							$.ajax({
+								url: '/register',
+								type: 'post',
+								data: formData,
+								dataType: 'json',
+								success: function(data) {
+									console.log(data)
+									var err_code = data.err_code
+									if (err_code === 0) {
+										window.alert('注册成功！')
+										// 服务端重定向针对异步请求无效
+										window.location.href = '/'
+									} else if (err_code === 1) {
+										window.alert('邮箱或昵称已存在！')
+									} else if (err_code === 500) {
+										window.alert('服务器忙，请稍后重试！')
+									}
+								}
+							})
+						}
+
+					})
+				}, false);
+			})();
+
+			$(function() {
+				$("[data-toggle='popover']").popover({
+					animation: true, //淡入淡出
+					html: true, //content中插入html代码
+					container: "body",
+					content: "<div style='width: 20px; height: 20px;'><img src='/public/img/erweima.jpg' style='width:30px; height: 50px'></div>", //插入图片的路径 及 样式
+				});
+			});
+		</script>
+
+	</body>
+
+</html>
+
+<!-- 
+  领过苹果的不能再领了
+  老师发苹果
+  HTTP 是无状态的
+
+  你自己记住你自己
+
+  Cookie 小纸条
+
+  Cookie 可以用来保存一些不太敏感的数据。
+  但是不能用来保存用户登陆状态。
+  isVIP: true
+
+  记住用户名、购物车
+
+  Session
+
+  超市 -》 电子柜（）服务端
+  你（客户端）（二维码小票（开箱凭证）Cookie）（凭证是唯一的，不可能重复）
+  一旦丢失，不可找回，如果小票丢失，你的状态也就丢失了。
+
+  钥匙是服务器给你的，所以这就很安全了，不太容易伪造出来。
+  这个时候我们就可以包一些敏感的数据保存到服务端。
+  客户端只需要拿着这把钥匙就可以了。
+ -->

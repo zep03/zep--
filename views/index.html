@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>zep教育</title>
+		<!-- 移动设备优先  设置宽度为设备屏幕的宽度，初始化缩放的比例，自动适应手机屏幕的宽度-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!-- 引入Bootstrap CSS -->
+		<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="/public/css/style.css">
+		<link rel="stylesheet" href="/public/css/DPlayer.min.css">
+		<link rel="stylesheet" href="/public/js/rocketTop20161018/css/rocketTop.css">
+		<link rel="stylesheet" href="/public/js/kefu/css/kefu.css">
+	</head>
+	<body>
+		<!-- 顶部导航开始 -->
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="col shadow-sm">
+						<nav class="navbar p-1 navbar-expand-lg navbar-light bg-white">
+							<a class="navbar-brand navbar-toggler border-0" href="#">
+								<img src="/public/img/logo.png" class="img-fluid" style="max-width: 90px;" alt="">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item active d-flex align-items-center">
+										<img src="/public/img/logo.png" style="max-width: 25px;max-height: 20px;" alt="">
+										<a class="nav-link  text-muted mr-3" href="#">首页</a>
+									</li>
+									<li class="nav-item d-flex align-items-center">
+										<img src="/public/img/jiaoyu.png"
+											style="max-width: 15px;max-height: 15px; display: inline-block;" alt="">
+										<a class="nav-link" href="#">学习天地</a>
+									</li>
+									<li class="nav-item d-flex align-items-center">
+										<img src="/public/img/shequ.png"
+											style="max-width: 20px;max-height: 20px; display: inline-block;" alt="">
+										<a class="nav-link" href="/community">技术社区</a>
+									</li>
+									<li class="nav-item d-flex align-items-center">
+										<img src="/public/img/zhixiaoyun.png"
+											style="max-width: 20px;max-height: 20px; display: inline-block;" alt="">
+										<a class="nav-link" href="#">智校云</a>
+									</li>
+									<li class="nav-item dropdown d-flex align-items-center">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											培训模式
+										</a>
+										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="#">面授模式</a>
+											<a class="dropdown-item" href="#">坐班模式</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">实习模式</a>
+										</div>
+									</li>
+									<li class="nav-item dropdown d-flex align-items-center">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											培训方向
+										</a>
+										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="#">Java高级工程师</a>
+											<a class="dropdown-item" href="#">HTML5前端+全栈</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">大数据大神班</a>
+										</div>
+									</li>
+									<li class="nav-item d-flex align-items-center">
+										<a class="nav-link disabled" href="#">Web全栈就业班<i
+												class="mark text-danger">￥18800</i> <s>￥19990</s></a>
+									</li>
+								</ul>
+								<div class="form-inline my-2 my-lg-0 nav-item dropdown d-flex align-items-center">
+									<img src="/public/img/wx.png" style="max-width: 25px;max-height: 30px;" alt="">
+									<a class="nav-link pl-1" href="#" data-trigger="hover" data-toggle="popover"
+										data-placement="bottom">
+										微信咨询
+									</a>
+
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- 顶部导航结束 -->
+
+		<!-- 头部开始 -->
+		<header class="mt-2 d-none d-lg-block">
+			<div class="container">
+				<div class="row py-4 align-items-center">
+					<div class="col-md-3 d-flex align-items-center justify-content-start">
+						<a href="index.html">
+							<img src="img/logo.png" style="max-width: 120px; height: auto;" alt="">
+							<a class="nav-link h3 text-muted mr-3" href="#">Zep教育</a>
+						</a>
+					</div>
+					<div class="col-md pt-6">
+						<blockquote class="blockquote text-center">
+							<p class="h3" style="color: rgb(18,150,219);">好口碑IT教育</p>
+						</blockquote>
+					</div>
+					<div class="col-md-3">
+						<div class="pt-1 d-flex">
+							<a href="#" class="d-flex flex-column  align-items-center text-decoration-none mr-1">
+								<img src="/public/img/icon_bjn.png" class="img-fluid"
+									style="max-width: 40px; max-height: 60px;" alt="">
+								<div class="text-center text-nowrap mt-2" style="color: rgb(18,150,219);">北京校区</div>
+							</a>
+							<a href="#" class="d-flex flex-column  align-items-center text-decoration-none mr-1">
+								<img src="/public/img/icon_shn.png" class="img-fluid"
+									style="max-width: 40px; max-height: 60px;" alt="">
+								<div class="text-center text-nowrap  mt-2" style="color: rgb(18,150,219);">上海校区</div>
+							</a>
+							<a href="#" class="d-flex flex-column  align-items-center text-decoration-none mr-1">
+								<img src="/public/img/icon_szn.png" class="img-fluid"
+									style="max-width: 40px; max-height: 60px;" alt="">
+								<div class="text-center text-nowrap  mt-2" style="color: rgb(18,150,219);">深圳校区</div>
+							</a>
+							<a href="#" class="d-flex flex-column  align-items-center text-decoration-none">
+								<img src="/public/img/icon_whn.png" class="img-fluid"
+									style="max-width: 40px; max-height: 60px;" alt="">
+								<div class="text-center text-nowrap  mt-2" style="color: rgb(18,150,219);">武汉校区</div>
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<blockquote class="mt-4 mb-2 blockquote text-center d-lg-none">
+			<p>好口碑IT教育</p>
+		</blockquote>
+		<!-- 头部结束 -->
+
+
+		<!-- 移动设备轮播图开始 -->
+		<section class="mt-2 d-lg-none">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="/public/img/player/1.jpg" alt="First slide">
+									<div class="carousel-caption d-none d-md-block">
+										<h5>Web全栈就业班</h5>
+										<p>最牛的Web全栈就业班，前100学费￥9000</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="/public/img/player/2.jpg" alt="First slide">
+									<div class="carousel-caption d-none d-md-block">
+										<h5>Web全栈就业班</h5>
+										<p>最牛的Web全栈就业班，前100学费￥9000</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="/public/img/player/3.jpg" alt="First slide">
+									<div class="carousel-caption d-none d-md-block">
+										<h5>Web全栈就业班</h5>
+										<p>最牛的Web全栈就业班，前100学费￥9000</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="/public/img/player/4.jpg" alt="First slide">
+									<div class="carousel-caption d-none d-md-block">
+										<h5>Web全栈就业班</h5>
+										<p>最牛的Web全栈就业班，前100学费￥9000</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="/public/img/player/5.jpg" alt="First slide">
+									<div class="carousel-caption d-none d-md-block">
+										<h5>Web全栈就业班</h5>
+										<p>最牛的Web全栈就业班，前100学费￥9000</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="/public/img/player/6.jpg" alt="First slide">
+									<div class="carousel-caption d-none d-md-block">
+										<h5>Web全栈就业班</h5>
+										<p>最牛的Web全栈就业班，前100学费￥9000</p>
+									</div>
+								</div>
+
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+								data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+								data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 移动设备轮播图结束 -->
+
+		<!-- PC端轮播图开始 -->
+		<style>
+			/* 鼠标选择时 */
+			.z-Sel {
+				background: transparent url(img/sanj.png) no-repeat 4px center;
+			}
+
+			/* 鼠标不选择时 */
+			.z-noSel {
+				color: #aaa;
+			}
+		</style>
+		<section id="player" class="mt-2 d-none d-lg-block">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div id="lunbo" class="carousel">
+							<a data-color="#6a296e" class="carousel-item active" href="#" target="_blank"><img
+									class="d-block w-100" src="/public/img/player/1.jpg"> </a>
+							<a data-color="#5600d3" class="carousel-item" href="#" target="_blank"><img
+									class="d-block w-100" src="/public/img/player/2.jpg"> </a>
+							<a data-color="#0b0f3e" class="carousel-item" href="#" target="_blank"><img
+									class="d-block w-100" src="/public/img/player/3.jpg"> </a>
+							<a data-color="#100e64" class="carousel-item" href="#" target="_blank"><img
+									class="d-block w-100" src="/public/img/player/4.jpg"> </a>
+							<a data-color="#4477e2" class="carousel-item" href="#" target="_blank"><img
+									class="d-block w-100" src="/public/img/player/5.jpg"> </a>
+							<a data-color="#110e45" class="carousel-item" href="#" target="_blank"><img
+									class="d-block w-100" src="/public/img/player/6.jpg"> </a>
+						</div>
+						<div class="card mt-4 border-0 w-25 pb-2 ml-auto shadow"
+							style="background: rgba(0,0,0,0.4); font-size: 15px; line-height: 15px;">
+							<div id="rlist" class="list-group">
+								<a class="list-group-item border-0 bg-transparent text-muted text-decoration-none text-truncate"
+									href="#">最牛的Web全栈就业班，学费￥9000</a>
+								<a class="list-group-item border-0 bg-transparent text-muted text-decoration-none text-truncate"
+									href="#">HTML5前端+全栈 一枝独秀，前端圈内无出其右</a>
+								<a class="list-group-item border-0 bg-transparent text-muted text-decoration-none text-truncate"
+									href="#">大数据大神班 行业独角兽，名企收割机</a>
+								<a class="list-group-item border-0 bg-transparent text-muted text-decoration-none text-truncate"
+									href="#">Java高级工程师 当家学科，T教育小清华</a>
+								<a class="list-group-item border-0 bg-transparent text-muted text-decoration-none text-truncate"
+									href="#">【人工智能开发】Al看图说话，零基础轻松入门人工智能</a>
+								<a class="list-group-item border-0 bg-transparent text-muted text-decoration-none text-truncate"
+									href="#">【大数据】数字经济下的重大的机遇</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- PC端轮播图结束 -->
+
+		<!-- 教程分类开始 -->
+		<section class="mt-5">
+			<div class="container">
+				<div class="mt-2">
+					<h3 class="text-muted text-center">实力圈粉，人手一套教程</h3>
+					<p class="text-muted text-center mb-0">横跨Java、HTML5前端、大数据、区块链、Python、Android等多个技术方向
+						源码级讲解的课程，有广度更有深度，助万千“粉丝”走上了软件开发之路，为众多IT企业技术升级提供了宝贵参考，好评如潮！
+					</p>
+				</div>
+				<ul class="row list-unstyled">
+					<li class="col-lg col-md-6  col-sm-6 d-flex flex-column align-items-center mt-2 pr-1">
+						<a href="#" class="box">
+							<img src="/public/img/classes/java.jpg" class="img-fluid " alt="">
+							<div class="title text-truncate">Java核心全套视频教程</div>
+						</a>
+					</li>
+					<li class="col-lg col-md-6 col-sm-6 d-flex flex-column align-items-center mt-2 pr-1">
+						<a href="#" class="box">
+							<img src="/public/img/classes/android.jpg" class="img-fluid " alt="">
+							<div class="title text-truncate">Android核心全套视频教程</div>
+						</a>
+					</li>
+					<li class="col-lg col-md-6 col-sm-6 d-flex flex-column align-items-center mt-2 pr-1">
+						<a href="#" class="box">
+							<img src="/public/img/classes/bigdata.jpg" class="img-fluid " alt="">
+							<div class="title text-truncate">大数据视频教程</div>
+						</a>
+					</li>
+					<li class="col-lg col-md-6 col-sm-6 d-flex flex-column align-items-center mt-2 pr-1">
+						<a href="#" class="box">
+							<img src="/public/img/classes/go.jpg" class="img-fluid " alt="">
+							<div class="title text-truncate">Go语言视频教程</div>
+						</a>
+					</li>
+					<li class="col-lg col-md-6 col-sm-6 d-flex flex-column align-items-center mt-2 pr-1">
+						<a href="#" class="box">
+							<img src="/public/img/classes/mysql.jpg" class="img-fluid " alt="">
+							<div class="title text-truncate">MySQL核心全套视频教程</div>
+						</a>
+					</li>
+					<li class="col-lg col-md-6 col-sm-6 d-flex flex-column align-items-center mt-2 pr-1">
+						<a href="#" class="box">
+							<img src="/public/img/classes/linux.png" class="img-fluid " alt="">
+							<div class="title text-truncate">Linux全套视频教程</div>
+						</a>
+					</li>
+					<li class="col-lg col-md-6 col-sm-6 d-flex flex-column align-items-center mt-2 pr-1">
+						<a href="#" class="box">
+							<img src="/public/img/classes/python.jpg" class="img-fluid " alt="">
+							<div class="title text-truncate">Python核心全套视频教程</div>
+						</a>
+					</li>
+					<li class="col-lg col-md-6  col-sm-6 d-flex flex-column align-items-center mt-2 pr-1">
+						<a href="#" class="box">
+							<img src="/public/img/classes/hc.jpg" class="img-fluid " alt="">
+							<div class="title text-truncate">HTML5+CSS3视频教程</div>
+						</a>
+					</li>
+					<li class="col-lg col-md-6 col-sm-6 d-flex flex-column align-items-center mt-2 pr-1">
+						<a href="#" class="box">
+							<img src="/public/img/classes/mysql.jpg" class="img-fluid" alt="">
+							<div class="title text-truncate">MySQL核心全套视频教程</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- 教程分类结束 -->
+
+		<!-- 关注我们模块开始 -->
+		<section>
+			<div class="container">
+				<div class="mt-4">
+					<h3 class="text-muted text-center">关注我们</h3>
+					<p class="text-muted text-center mb-2 ">掌握的是一门就业的技术，为成长积蓄力量</p>
+				</div>
+				<div class="row pb-4">
+					<div class="col-lg-8 col-md-12 col-sm-12 row shadow bg-light pb-sm-1">
+						<div class="news pr-sm-3 col-md-9 col-sm-9 col-9">
+							<img id="swiperBox" src="/public/img/news/news1.jpg" class="img-fluid w-100 h-100" alt="">
+						</div>
+						<div class="news_s  col-lg-3 col-md-3 col-sm-3 col-3">
+							<div class="pt-2"><img src="/public/img/news/news1.jpg" class="img-fluid" alt=""></div>
+							<div class="pt-2"><img src="/public/img/news/news2.jpg" class="img-fluid" alt=""></div>
+							<div class="pt-2"><img src="/public/img/news/news3.jpg" class="img-fluid" alt=""></div>
+							<div class="pt-2"><img src="/public/img/news/news1.jpg" class="img-fluid" alt=""></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-12">
+						<div class="card w-100 bg-light  shadow" style="height: 309px;">
+							<div class="card-header d-flex bg-white ">
+								<h6 class="d-inline-block">最新动态<small class="ml-2 text-muted"><i>News</i></small></h5>
+									<div class="d-inline-block ml-auto">
+										<a class="text-black-50" style="font-size: 14px;" href="#">更多&gt;&gt;</a>
+									</div>
+							</div>
+							<ul class="list-group" style="line-height: 28px; font-size: 15px;">
+								<li class="list-group-item py-1 border-0">
+									<a class="d-block text-dark text-nowrap text-truncate text-decoration-none" href="">
+										<span class="badge badge-warning">1</span>
+										Web全栈就业班5个月面授加一个月面授Web全栈就业班5个月面授加一个月面授
+									</a>
+								</li>
+								<li class="list-group-item py-1 border-0">
+									<a class="d-block text-dark text-nowrap text-truncate text-decoration-none" href="">
+										<span class="badge badge-warning">2</span>
+										Web全栈就业班5个月面授加一个月面授Web全栈就业班5个月面授加一个月面授
+									</a>
+								</li>
+								<li class="list-group-item py-1 border-0">
+									<a class="d-block text-dark text-nowrap text-truncate text-decoration-none" href="">
+										<span class="badge badge-warning">3</span>
+										Web全栈就业班5个月面授加一个月面授Web全栈就业班5个月面授加一个月面授
+									</a>
+								</li>
+								<li class="list-group-item py-1 border-0">
+									<a class="d-block text-dark text-nowrap text-truncate text-decoration-none" href="">
+										<span class="badge badge-dark">4</span>
+										Web全栈就业班5个月面授加一个月面授Web全栈就业班5个月面授加一个月面授
+									</a>
+								</li>
+								<li class="list-group-item py-1 border-0">
+									<a class="d-block text-dark text-nowrap text-truncate text-decoration-none" href="">
+										<span class="badge badge-dark">5</span>
+										Web全栈就业班5个月面授加一个月面授Web全栈就业班5个月面授加一个月面授
+									</a>
+								</li>
+								<li class="list-group-item py-1 border-0">
+									<a class="d-block text-dark text-nowrap text-truncate text-decoration-none" href="">
+										<span class="badge badge-dark">6</span>
+										Web全栈就业班5个月面授加一个月面授Web全栈就业班5个月面授加一个月面授
+									</a>
+								</li>
+								<li class="list-group-item py-1 border-0">
+									<a class="d-block text-dark text-nowrap text-truncate text-decoration-none" href="">
+										<span class="badge badge-dark">7</span>
+										Web全栈就业班5个月面授加一个月面授Web全栈就业班5个月面授加一个月面授
+									</a>
+								</li>
+
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 关注我们模块结束 -->
+
+		<!-- 免费教程模块开始 -->
+		<section>
+			<div class="container">
+				<div class="row mt-4">
+					<div class="mt-4 m-auto">
+						<h3 class="text-muted text-center">免费教程资源</h3>
+						<p class="text-muted text-center mb-2 ">14年不忘初心，向千万学子免费分享IT培训学习资源，视频教程已发布12万余节，年均下载及播放量4000万余次
+						</p>
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="card border-0 col-lg-3 col-md-4 col-sm-6 col-12 free" style="width: 18rem;">
+						<a href="#" class="text-decoration-none img_box">
+							<img class="card-img-top rounded-lg" src="/public/img/classes/c1.jpg" alt="">
+							<div class="card-body pt-2">
+								<p class="card-text text-center mb-2">超全面Python基础入门教程</p>
+								<p class="card-subtitle text-muted text-center">初级 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg
+										t="1616156323313" class="icon" viewBox="0 0 1024 1024" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" p-id="2217" width="20" height="20">
+										<path
+											d="M512 498.5c-93.74 0-170-76.26-170-170s76.26-170 170-170 170 76.26 170 170-76.26 170-170 170z m0-300c-71.68 0-130 58.32-130 130s58.32 130 130 130 130-58.32 130-130-58.32-130-130-130zM856.8 765.5H167.2l-0.87-19.09c-0.17-3.73-3.47-92.21 58-156.93 40.52-42.64 98.82-64.45 173.28-64.84 41.34-0.21 70.43-0.34 91.55-0.4 3.22 0 9.79-0.07 22.83 0s19.55 0 22.77 0c21.12 0.06 50.21 0.19 91.55 0.4 74.46 0.39 132.76 22.2 173.28 64.84 61.51 64.72 58.21 153.2 58 156.93z m-649.61-40h609.62c-2.56-25.81-12-72.74-46.44-108.75-32.73-34.25-81.25-51.75-144.22-52.11-41.36-0.21-70.45-0.34-91.54-0.4h-0.16c-2.52 0-8.78-0.07-22.42 0s-20 0-22.48 0h-0.16c-21.09 0.06-50.18 0.19-91.54 0.4-63 0.33-111.49 17.86-144.22 52.11-34.4 36-43.88 82.92-46.44 108.75z"
+											p-id="2218"></path>
+									</svg>17335人学习</p>
+							</div>
+							<div class="sy_mask"><img class="sy_show " src="/public/img/bofang.png"></div>
+							<p class="p1">热门</p>
+						</a>
+					</div>
+					<div class="card border-0 col-lg-3 col-md-4 col-sm-6 col-12 free" style="width: 18rem;">
+						<a href="#" class="text-decoration-none img_box">
+							<img class="card-img-top rounded-lg" src="/public/img/classes/c2.jpg" alt="Card image cap">
+							<div class="card-body pt-2">
+								<p class="card-text text-center mb-2">超全面Python基础入门教程</p>
+								<p class="card-subtitle text-muted text-center">初级 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg
+										t="1616156323313" class="icon" viewBox="0 0 1024 1024" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" p-id="2217" width="20" height="20">
+										<path
+											d="M512 498.5c-93.74 0-170-76.26-170-170s76.26-170 170-170 170 76.26 170 170-76.26 170-170 170z m0-300c-71.68 0-130 58.32-130 130s58.32 130 130 130 130-58.32 130-130-58.32-130-130-130zM856.8 765.5H167.2l-0.87-19.09c-0.17-3.73-3.47-92.21 58-156.93 40.52-42.64 98.82-64.45 173.28-64.84 41.34-0.21 70.43-0.34 91.55-0.4 3.22 0 9.79-0.07 22.83 0s19.55 0 22.77 0c21.12 0.06 50.21 0.19 91.55 0.4 74.46 0.39 132.76 22.2 173.28 64.84 61.51 64.72 58.21 153.2 58 156.93z m-649.61-40h609.62c-2.56-25.81-12-72.74-46.44-108.75-32.73-34.25-81.25-51.75-144.22-52.11-41.36-0.21-70.45-0.34-91.54-0.4h-0.16c-2.52 0-8.78-0.07-22.42 0s-20 0-22.48 0h-0.16c-21.09 0.06-50.18 0.19-91.54 0.4-63 0.33-111.49 17.86-144.22 52.11-34.4 36-43.88 82.92-46.44 108.75z"
+											p-id="2218"></path>
+									</svg>17335人学习</p>
+							</div>
+							<div class="sy_mask"><img class="sy_show " src="/public/img/bofang.png"></div>
+							<p class="p1">热门</p>
+						</a>
+					</div>
+					<div class="card border-0 col-lg-3 col-md-4 col-sm-6 col-12 free" style="width: 18rem;">
+						<a href="#" class="text-decoration-none img_box">
+							<img class="card-img-top rounded-lg" src="/public/img/classes/c3.jpg" alt="Card image cap">
+							<div class="card-body pt-2">
+								<p class="card-text text-center mb-2">超全面Python基础入门教程</p>
+								<p class="card-subtitle text-muted text-center">初级 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg
+										t="1616156323313" class="icon" viewBox="0 0 1024 1024" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" p-id="2217" width="20" height="20">
+										<path
+											d="M512 498.5c-93.74 0-170-76.26-170-170s76.26-170 170-170 170 76.26 170 170-76.26 170-170 170z m0-300c-71.68 0-130 58.32-130 130s58.32 130 130 130 130-58.32 130-130-58.32-130-130-130zM856.8 765.5H167.2l-0.87-19.09c-0.17-3.73-3.47-92.21 58-156.93 40.52-42.64 98.82-64.45 173.28-64.84 41.34-0.21 70.43-0.34 91.55-0.4 3.22 0 9.79-0.07 22.83 0s19.55 0 22.77 0c21.12 0.06 50.21 0.19 91.55 0.4 74.46 0.39 132.76 22.2 173.28 64.84 61.51 64.72 58.21 153.2 58 156.93z m-649.61-40h609.62c-2.56-25.81-12-72.74-46.44-108.75-32.73-34.25-81.25-51.75-144.22-52.11-41.36-0.21-70.45-0.34-91.54-0.4h-0.16c-2.52 0-8.78-0.07-22.42 0s-20 0-22.48 0h-0.16c-21.09 0.06-50.18 0.19-91.54 0.4-63 0.33-111.49 17.86-144.22 52.11-34.4 36-43.88 82.92-46.44 108.75z"
+											p-id="2218"></path>
+									</svg>17335人学习</p>
+							</div>
+							<div class="sy_mask"><img class="sy_show " src="/public/img/bofang.png"></div>
+							<p class="p1">热门</p>
+						</a>
+					</div>
+					<div class="card border-0 col-lg-3 col-md-4 col-sm-6 col-12 free" style="width: 18rem;">
+						<a href="#" class="text-decoration-none img_box">
+							<img class="card-img-top rounded-lg" src="/public/img/classes/c4.jpg" alt="Card image cap">
+							<div class="card-body pt-2">
+								<p class="card-text text-center mb-2">超全面Python基础入门教程</p>
+								<p class="card-subtitle text-muted text-center">初级 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg
+										t="1616156323313" class="icon" viewBox="0 0 1024 1024" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" p-id="2217" width="20" height="20">
+										<path
+											d="M512 498.5c-93.74 0-170-76.26-170-170s76.26-170 170-170 170 76.26 170 170-76.26 170-170 170z m0-300c-71.68 0-130 58.32-130 130s58.32 130 130 130 130-58.32 130-130-58.32-130-130-130zM856.8 765.5H167.2l-0.87-19.09c-0.17-3.73-3.47-92.21 58-156.93 40.52-42.64 98.82-64.45 173.28-64.84 41.34-0.21 70.43-0.34 91.55-0.4 3.22 0 9.79-0.07 22.83 0s19.55 0 22.77 0c21.12 0.06 50.21 0.19 91.55 0.4 74.46 0.39 132.76 22.2 173.28 64.84 61.51 64.72 58.21 153.2 58 156.93z m-649.61-40h609.62c-2.56-25.81-12-72.74-46.44-108.75-32.73-34.25-81.25-51.75-144.22-52.11-41.36-0.21-70.45-0.34-91.54-0.4h-0.16c-2.52 0-8.78-0.07-22.42 0s-20 0-22.48 0h-0.16c-21.09 0.06-50.18 0.19-91.54 0.4-63 0.33-111.49 17.86-144.22 52.11-34.4 36-43.88 82.92-46.44 108.75z"
+											p-id="2218"></path>
+									</svg>17335人学习</p>
+							</div>
+							<div class="sy_mask"><img class="sy_show " src="/public/img/bofang.png"></div>
+							<p class="p1">热门</p>
+						</a>
+					</div>
+					<div class="card border-0 col-lg-3 col-md-4 col-sm-6 col-12 free" style="width: 18rem;">
+						<a href="#" class="text-decoration-none img_box">
+							<img class="card-img-top rounded-lg" src="/public/img/classes/c5.jpg" alt="Card image cap">
+							<div class="card-body pt-2">
+								<p class="card-text text-center mb-2">超全面Python基础入门教程</p>
+								<p class="card-subtitle text-muted text-center">初级 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg
+										t="1616156323313" class="icon" viewBox="0 0 1024 1024" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" p-id="2217" width="20" height="20">
+										<path
+											d="M512 498.5c-93.74 0-170-76.26-170-170s76.26-170 170-170 170 76.26 170 170-76.26 170-170 170z m0-300c-71.68 0-130 58.32-130 130s58.32 130 130 130 130-58.32 130-130-58.32-130-130-130zM856.8 765.5H167.2l-0.87-19.09c-0.17-3.73-3.47-92.21 58-156.93 40.52-42.64 98.82-64.45 173.28-64.84 41.34-0.21 70.43-0.34 91.55-0.4 3.22 0 9.79-0.07 22.83 0s19.55 0 22.77 0c21.12 0.06 50.21 0.19 91.55 0.4 74.46 0.39 132.76 22.2 173.28 64.84 61.51 64.72 58.21 153.2 58 156.93z m-649.61-40h609.62c-2.56-25.81-12-72.74-46.44-108.75-32.73-34.25-81.25-51.75-144.22-52.11-41.36-0.21-70.45-0.34-91.54-0.4h-0.16c-2.52 0-8.78-0.07-22.42 0s-20 0-22.48 0h-0.16c-21.09 0.06-50.18 0.19-91.54 0.4-63 0.33-111.49 17.86-144.22 52.11-34.4 36-43.88 82.92-46.44 108.75z"
+											p-id="2218"></path>
+									</svg>17335人学习</p>
+							</div>
+							<div class="sy_mask"><img class="sy_show " src="/public/img/bofang.png"></div>
+							<p class="p1">热门</p>
+						</a>
+					</div>
+					<div class="card border-0 col-lg-3 col-md-4 col-sm-6 col-12 free" style="width: 18rem;">
+						<a href="#" class="text-decoration-none img_box">
+							<img class="card-img-top rounded-lg" src="/public/img/classes/c1.jpg" alt="Card image cap">
+							<div class="card-body pt-2">
+								<p class="card-text text-center mb-2">超全面Python基础入门教程</p>
+								<p class="card-subtitle text-muted text-center">初级 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg
+										t="1616156323313" class="icon" viewBox="0 0 1024 1024" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" p-id="2217" width="20" height="20">
+										<path
+											d="M512 498.5c-93.74 0-170-76.26-170-170s76.26-170 170-170 170 76.26 170 170-76.26 170-170 170z m0-300c-71.68 0-130 58.32-130 130s58.32 130 130 130 130-58.32 130-130-58.32-130-130-130zM856.8 765.5H167.2l-0.87-19.09c-0.17-3.73-3.47-92.21 58-156.93 40.52-42.64 98.82-64.45 173.28-64.84 41.34-0.21 70.43-0.34 91.55-0.4 3.22 0 9.79-0.07 22.83 0s19.55 0 22.77 0c21.12 0.06 50.21 0.19 91.55 0.4 74.46 0.39 132.76 22.2 173.28 64.84 61.51 64.72 58.21 153.2 58 156.93z m-649.61-40h609.62c-2.56-25.81-12-72.74-46.44-108.75-32.73-34.25-81.25-51.75-144.22-52.11-41.36-0.21-70.45-0.34-91.54-0.4h-0.16c-2.52 0-8.78-0.07-22.42 0s-20 0-22.48 0h-0.16c-21.09 0.06-50.18 0.19-91.54 0.4-63 0.33-111.49 17.86-144.22 52.11-34.4 36-43.88 82.92-46.44 108.75z"
+											p-id="2218"></path>
+									</svg>17335人学习</p>
+							</div>
+							<div class="sy_mask"><img class="sy_show " src="/public/img/bofang.png"></div>
+							<p class="p1">热门</p>
+						</a>
+					</div>
+					<div class="card border-0 col-lg-3 col-md-4 col-sm-6 col-12 free" style="width: 18rem;">
+						<a href="#" class="text-decoration-none img_box">
+							<img class="card-img-top rounded-lg" src="/public/img/classes/c3.jpg" alt="Card image cap">
+							<div class="card-body pt-2">
+								<p class="card-text text-center mb-2">超全面Python基础入门教程</p>
+								<p class="card-subtitle text-muted text-center">初级 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg
+										t="1616156323313" class="icon" viewBox="0 0 1024 1024" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" p-id="2217" width="20" height="20">
+										<path
+											d="M512 498.5c-93.74 0-170-76.26-170-170s76.26-170 170-170 170 76.26 170 170-76.26 170-170 170z m0-300c-71.68 0-130 58.32-130 130s58.32 130 130 130 130-58.32 130-130-58.32-130-130-130zM856.8 765.5H167.2l-0.87-19.09c-0.17-3.73-3.47-92.21 58-156.93 40.52-42.64 98.82-64.45 173.28-64.84 41.34-0.21 70.43-0.34 91.55-0.4 3.22 0 9.79-0.07 22.83 0s19.55 0 22.77 0c21.12 0.06 50.21 0.19 91.55 0.4 74.46 0.39 132.76 22.2 173.28 64.84 61.51 64.72 58.21 153.2 58 156.93z m-649.61-40h609.62c-2.56-25.81-12-72.74-46.44-108.75-32.73-34.25-81.25-51.75-144.22-52.11-41.36-0.21-70.45-0.34-91.54-0.4h-0.16c-2.52 0-8.78-0.07-22.42 0s-20 0-22.48 0h-0.16c-21.09 0.06-50.18 0.19-91.54 0.4-63 0.33-111.49 17.86-144.22 52.11-34.4 36-43.88 82.92-46.44 108.75z"
+											p-id="2218"></path>
+									</svg>17335人学习</p>
+							</div>
+							<div class="sy_mask"><img class="sy_show " src="/public/img/bofang.png"></div>
+							<p class="p1">热门</p>
+						</a>
+					</div>
+					<div class="card border-0 col-lg-3 col-md-4 col-sm-6 col-12 free" style="width: 18rem;">
+						<a href="#" class="text-decoration-none img_box">
+							<img class="card-img-top rounded-lg" src="/public/img/classes/c1.jpg" alt="Card image cap">
+							<div class="card-body pt-2">
+								<p class="card-text text-center mb-2">超全面Python基础入门教程</p>
+								<p class="card-subtitle text-muted text-center">初级 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg
+										t="1616156323313" class="icon" viewBox="0 0 1024 1024" version="1.1"
+										xmlns="http://www.w3.org/2000/svg" p-id="2217" width="20" height="20">
+										<path
+											d="M512 498.5c-93.74 0-170-76.26-170-170s76.26-170 170-170 170 76.26 170 170-76.26 170-170 170z m0-300c-71.68 0-130 58.32-130 130s58.32 130 130 130 130-58.32 130-130-58.32-130-130-130zM856.8 765.5H167.2l-0.87-19.09c-0.17-3.73-3.47-92.21 58-156.93 40.52-42.64 98.82-64.45 173.28-64.84 41.34-0.21 70.43-0.34 91.55-0.4 3.22 0 9.79-0.07 22.83 0s19.55 0 22.77 0c21.12 0.06 50.21 0.19 91.55 0.4 74.46 0.39 132.76 22.2 173.28 64.84 61.51 64.72 58.21 153.2 58 156.93z m-649.61-40h609.62c-2.56-25.81-12-72.74-46.44-108.75-32.73-34.25-81.25-51.75-144.22-52.11-41.36-0.21-70.45-0.34-91.54-0.4h-0.16c-2.52 0-8.78-0.07-22.42 0s-20 0-22.48 0h-0.16c-21.09 0.06-50.18 0.19-91.54 0.4-63 0.33-111.49 17.86-144.22 52.11-34.4 36-43.88 82.92-46.44 108.75z"
+											p-id="2218"></path>
+									</svg>17335人学习</p>
+							</div>
+							<div class="sy_mask"><img class="sy_show " src="/public/img/bofang.png"></div>
+							<p class="p1">热门</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 免费教程模块结束 -->
+
+		<!-- 名师模块开始 -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="row col-12  ">
+						<div class="mt-4 m-auto">
+							<h3 class="text-muted text-center">实战讲师汇聚，实战经验倾囊相授</h3>
+							<p class="text-muted text-center mb-2 ">部分讲师曾就职于IBM、微软、Oracle-Sun、华为、亚信等企业</p>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-4 text-center">
+					<div class="t_box col-lg-2 col-md-3 col-sm-4 col-6 pt-3">
+						<img src="/public/img/teacher/t1.jpg" class="img-fluid w-100" alt="">
+						<div class="info">
+							<h5 class="m-0 p-0">赵宏儒</h5>
+							<p class="m-1 p-0">Java高级讲师</p>
+							<p class="mt-0 pt-0">曾就职于中国建筑第二工程局、北京联心建筑有限公司、清华大学数字艺术培训讲师。参与设计制作了大量的居住...</p>
+						</div>
+					</div>
+					<div class="t_box col-lg-2 col-md-3 col-sm-4 col-6 pt-3">
+						<img src="/public/img/teacher/t1.jpg" class="img-fluid w-100" alt="">
+						<div class="info">
+							<h5 class="m-0 p-0">赵宏儒</h5>
+							<p class="m-1 p-0">Java高级讲师</p>
+							<p class="mt-0 pt-0">曾就职于中国建筑第二工程局、北京联心建筑有限公司、清华大学数字艺术培训讲师。参与设计制作了大量的居住...</p>
+						</div>
+					</div>
+					<div class="t_box col-lg-2 col-md-3 col-sm-4 col-6 pt-3">
+						<img src="/public/img/teacher/t1.jpg" class="img-fluid w-100" alt="">
+						<div class="info">
+							<h5 class="m-0 p-0">赵宏儒</h5>
+							<p class="m-1 p-0">Java高级讲师</p>
+							<p class="mt-0 pt-0">曾就职于中国建筑第二工程局、北京联心建筑有限公司、清华大学数字艺术培训讲师。参与设计制作了大量的居住...</p>
+						</div>
+					</div>
+					<div class="t_box col-lg-2 col-md-3 col-sm-4 col-6 pt-3">
+						<img src="/public/img/teacher/t1.jpg" class="img-fluid w-100" alt="">
+						<div class="info">
+							<h5 class="m-0 p-0">赵宏儒</h5>
+							<p class="m-1 p-0">Java高级讲师</p>
+							<p class="mt-0 pt-0">曾就职于中国建筑第二工程局、北京联心建筑有限公司、清华大学数字艺术培训讲师。参与设计制作了大量的居住...</p>
+						</div>
+					</div>
+					<div class="t_box col-lg-2 col-md-3 col-sm-4 col-6 pt-3">
+						<img src="/public/img/teacher/t1.jpg" class="img-fluid w-100" alt="">
+						<div class="info">
+							<h5 class="m-0 p-0">赵宏儒</h5>
+							<p class="m-1 p-0">Java高级讲师</p>
+							<p class="mt-0 pt-0">曾就职于中国建筑第二工程局、北京联心建筑有限公司、清华大学数字艺术培训讲师。参与设计制作了大量的居住...</p>
+						</div>
+					</div>
+					<div class="t_box col-lg-2 col-md-3 col-sm-4 col-6 pt-3">
+						<img src="/public/img/teacher/t1.jpg" class="img-fluid w-100" alt="">
+						<div class="info">
+							<h5 class="m-0 p-0">赵宏儒</h5>
+							<p class="m-1 p-0">Java高级讲师</p>
+							<p class="mt-0 pt-0">曾就职于中国建筑第二工程局、北京联心建筑有限公司、清华大学数字艺术培训讲师。参与设计制作了大量的居住...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 名师模块结束 -->
+
+		<!-- 真项目开始 -->
+		<section>
+			<div class="container">
+				<div class="row mt-4">
+					<div class="row col-12  ">
+						<div class="mt-4 m-auto">
+							<h3 class="text-muted text-center">真项目</h3>
+							<p class="text-muted text-center mb-2 ">
+								学IT必须学习多行业、多领域、有深度的真项目课程。除独立课研团队自研以外也与华为、阿里、亚马逊、百度等名企深度合作
+								每年斥资亿元投入全场景、全行业项目课程研发，制定IT培训行业“真“项目标准，并且建立可以免费体验的在线“项目库”</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div id="slide" class="col-12">
+						<ul>
+							<li>
+								<a href="#" class="text-decoration-none">
+									<img src="/public/img/classes/android.jpg" />
+									<div style="text-align: center;">
+										<p class="m-1">【生活服务】智维找房</p>
+										<span class="text-muted">2021-03-20</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">
+									<img src="/public/img/project/p1.jpg" />
+									<div style="text-align: center;">
+										<p class="m-1">【生活服务】智维找房</p>
+										<span class="text-muted">2021-03-20</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">
+									<img src="/public/img/classes/go.jpg" />
+									<div style="text-align: center;">
+										<p class="m-1">【生活服务】智维找房</p>
+										<span class="text-muted">2021-03-20</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">
+									<img src="/public/img/classes/hc.jpg" />
+									<div style="text-align: center;">
+										<p class="m-1">【生活服务】智维找房</p>
+										<span class="text-muted">2021-03-20</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="text-decoration-none">
+									<img src="/public/img/classes/java.jpg" />
+									<div style="text-align: center;">
+										<p class="m-1">【生活服务】智维找房</p>
+										<span class="text-muted">2021-03-20</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 真项目结束 -->
+
+		<!-- 学长学姐分享模块开始 -->
+		<section>
+			<div class="container">
+				<div class="row mt-4">
+					<div class="mt-4 m-auto">
+						<h3 class="text-muted text-center">学习生活不枯燥，学长学姐出奇招</h3>
+						<p class="text-muted text-center mb-2 ">学长、学姐分享职业历程、生活爆料</p>
+					</div>
+
+				</div>
+				<div class="row pb-4">
+					<div class="col-lg-6 col-sm-12">
+
+						<div class="share mt-3">
+							<!-- <img src="/public/img/share/s1.jpg" style="display: block; width: 100%;max-height: 100%;" alt=""> -->
+							<div class="shareTitle">不负时光，我们与zep教育的邂逅</div>
+							<div id="dplayer0" style="height: 303px;"></div>
+						</div>
+ 
+					</div>
+					<div class="col-lg-6 col-sm-12">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-6 pb-3 pt-3">
+
+								<div class="share">
+									<!-- <img src="/public/img/share/s2.png" class="img-fluid w-100" alt=""> -->
+									<div id="dplayer1"></div>
+									<div class="shareTitle">你只管努力，我许你美好未来！</div>
+								</div>
+
+							</div>
+							<div class="col-lg-6 col-md-6  col-sm-6 col-6 pb-3 pt-3">
+
+								<div class="share">
+									<!-- <img src="/public/img/share/s3.png" class="img-fluid w-100" alt=""> -->
+									<div id="dplayer2"></div>
+									<div class="shareTitle">你只管努力，我许你美好未来！</div>
+								</div>
+
+							</div>
+							<div class="col-lg-6 col-md-6  col-sm-6 col-6 pb-4 pt-0">
+
+								<div class="share">
+									<!-- <img src="/public/img/share/s3.png" class="img-fluid w-100" alt=""> -->
+									<div id="dplayer3"></div>
+									<div class="shareTitle">你只管努力，我许你美好未来！</div>
+								</div>
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6  col-sm-6 col-6 pb-4 pt-0">
+
+								<div class="share">
+									<!-- <img src="/public/img/share/s3.png" class="img-fluid w-100" alt=""> -->
+									<div id="dplayer4"></div>
+									<div class="shareTitle">你只管努力，我许你美好未来！</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+		</section>
+
+		<!-- 对标培训开始 -->
+		<section class="mt-0">
+			<div class="container" id="pk">
+				<div class="row mt-0">
+					<div class="mt-4 m-auto">
+						<h3 class="text-muted text-center">对标培训</h3>
+						<p class="text-muted text-center mb-2 ">掌握的是一门就业的技术，为成长积蓄力量</p>
+					</div>
+				</div>
+
+				<div class="row mt-3 pt-2">
+					<div class="col">
+						<div>
+							<div class="bg-light text-right pr-3 rounded-lg py-3 h4">(新版) 实习模式</div>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="h1 text-center bg-light rounded-lg shadow">
+							<b class="text-warning">P</b> <b class="text-dark">K</b>
+						</div>
+					</div>
+					<div class="col">
+						<div>
+							<div class="bg-light text-left pl-3 rounded-lg py-3 h4">培训模式（传统）</div>
+						</div>
+					</div>
+				</div>
+				<div class="row my-1 pt-2">
+					<div class="col">
+						<div class="progress bg-light w-100" style="height: 40px;">
+							<div class="progress-bar text-danger bg-light text-right pr-3" style="width: 20%;">
+								75
+							</div>
+							<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger text-right pr-3"
+								style="width: 80%;">
+								写的是跳槽简历，真实的情况
+							</div>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="rounded-lg h5 text-center shadow-sm p-2 bg-light">求职就业</div>
+					</div>
+					<div class="col">
+						<div class="progress bg-light w-100" style="height: 40px;">
+							<div class="progress-bar progress-bar-striped  bg-dark pl-3 text-left pl-3"
+								style="width: 40%;">
+								包装简历，承受心里压力
+							</div>
+							<div class="progress-bar text-dark bg-light text-left pl-3" style="width: 60%;">
+								40
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row my-1 pt-2">
+					<div class="col-10 col-sm-5">
+						<div class="progress bg-light w-100" style="height: 40px;">
+							<div class="progress-bar text-danger bg-light text-right pr-3" style="width: 5%;">
+								90
+							</div>
+							<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger text-right pr-3"
+								style="width: 95%;">
+								一线技术总监指导开发商业项目
+							</div>
+						</div>
+					</div>
+					<div class="col-2 col-sm-2">
+						<div class="rounded-lg h5 text-center shadow-sm p-2 bg-light">师资力量</div>
+					</div>
+					<div class="col-10 col-sm-5">
+						<div class="progress bg-light w-100" style="height: 40px;">
+							<div class="progress-bar progress-bar-striped  bg-dark pl-3 text-left pl-3"
+								style="width: 80%;">
+								专业的讲师， 脱离开发岗
+							</div>
+							<div class="progress-bar text-dark bg-light text-left pl-3" style="width: 20%;">
+								70
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row my-1 pt-2">
+					<div class="col">
+						<div class="progress bg-light w-100" style="height: 40px;">
+							<div class="progress-bar text-danger bg-light text-right pr-3" style="width: 15%;">
+								60
+							</div>
+							<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger text-right pr-3"
+								style="width: 85%;">
+								写的是跳槽简历，真实的情况
+							</div>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="rounded-lg h5 text-center shadow-sm p-2 bg-light">求职就业</div>
+					</div>
+					<div class="col">
+						<div class="progress bg-light w-100" style="height: 40px;">
+							<div class="progress-bar progress-bar-striped  bg-dark pl-3 text-left pl-3"
+								style="width: 40%;">
+								包装简历，承受心里压力
+							</div>
+							<div class="progress-bar text-dark bg-light text-left pl-3" style="width: 80%;">
+								35
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 对标培训结束 -->
+
+		<!-- 页脚开始 -->
+		<footer class="mt-4 bg-dark text-light small">
+			<div class="container">
+				<div class="row pt-3 pb-5">
+					<div class="col-sm-12 col-md-10 ">
+						<div class="pt-4">
+							<p>Zep教育，成就你的梦想！</p>
+							<ul class="nav">
+								<li class="nav-item"><a href="#" class="nav-link text-white pl-0">关于我们</a></li>
+								<li class="nav-item"><a href="#" class="nav-link text-white">联系我们</a></li>
+								<li class="nav-item"><a href="#" class="nav-link text-white">加入我们</a></li>
+								<li class="nav-item"><a href="#" class="nav-link text-white">帮助中心</a></li>
+							</ul>
+							<div class="text-muted">
+								<i>©2019-2021</i> 深圳网络科技有限公司 <span class="mx-3">版权所有</span> <a href="#"
+									class="text-muted">京ICP备200000号</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-2 text-md-right text-center p-0">
+						<figure class="figure mt-3">
+							<img src="/public/img/erweima.jpg" class="figure-img img-thumbnail" style="max-width: 100px;"
+								alt="">
+							<figcaption class="figure-caption text-center text-light">关注我们</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 页脚结束 -->
+
+		<!-- 返回顶部火箭 -->
+		<div id="shape">
+			<div class="shapeColor">
+				<div class="shapeFly">
+				</div>
+			</div>
+		</div>
+		
+		<!--在线客服  -->
+		<div class="scrollsidebar" id="scrollsidebar">
+			<div class="side_content">
+				<div class="side_list">
+					<div class="side_title"><a title="隐藏" class="close_btn"><span>关闭</span></a></div>
+					<div class="side_center">
+						<div class="custom_service">
+							<p> <a title="点击这里给我发消息" href="###" target="_blank"><img
+										src="/public/js/kefu/images/button_11.gif"></a> </p>
+						</div>
+						<div class="other">
+							<p><img src="/public/img/erweima.jpg" width="120" /></p>
+							<p>客户服务热线</p>
+							<p>15818627635</p>
+						</div>
+						<div class="msgserver">
+							<p><a href="###">联系我们</a></p>
+						</div>
+					</div>
+					<div class="side_bottom"></div>
+				</div>
+			</div>
+			<div class="show_btn"><span>在线客服</span></div>
+		</div>
+
+		<!-- 先引入 jQuery.js,再引入bootstrap.js -->
+		<!-- <script src="./js/jquery-3.5.0.js"></script> -->
+		<script src="/node_modules/jquery/dist/jquery.js"></script>
+		<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+		
+		<script src="/public/js/index.js"></script>
+		<script src="/public/js/slider.js"> </script>
+		<!--引入Dplayer的JS-->
+		<script src="/public/js/DPlayer.min.js"></script>
+		<script src="/public/js/dplayer.js"></script>
+		<!-- 引入返回顶部插件 -->
+		<script src="/public/js/rocketTop20161018/js/rocketTop.js"></script>
+		<!-- 引入在线客服插件 -->
+		<script src="/public/js/kefu/js/kefu.js"></script>
+
+	</body>
+</html>
